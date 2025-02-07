@@ -1,0 +1,25 @@
+# "org" ensures this Service is used with the correct Serverless Framework Access Key.
+org: sebsv
+# "app" enables Serverless Framework Dashboard features and sharing them with other Services.
+app: serverless-typescript-template
+# "service" is the name of this project. This will also be added to your AWS resource names.
+service: Serverless-TypeScript-template
+
+provider:
+  name: aws
+  runtime: nodejs22.x
+
+functions:
+  api:
+    handler: index.handler
+    events:
+      - httpApi: "*"
+
+package:
+  patterns:
+    - "!**/*"
+    - src/**
+  individually: true
+
+plugins:
+  - ./plugins/ncc.js

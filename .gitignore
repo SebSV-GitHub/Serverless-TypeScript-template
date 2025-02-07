@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/macos,linux,windows,visualstudiocode,vim,intellij+all,node
-# Edit at https://www.toptal.com/developers/gitignore?templates=macos,linux,windows,visualstudiocode,vim,intellij+all,node
+# Created by https://www.toptal.com/developers/gitignore/api/macos,linux,windows,visualstudiocode,vim,intellij+all,node,serverless
+# Edit at https://www.toptal.com/developers/gitignore?templates=macos,linux,windows,visualstudiocode,vim,intellij+all,node,serverless
 
 ### Intellij+all ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
@@ -277,6 +277,10 @@ dist
 # SvelteKit build / generate output
 .svelte-kit
 
+### Serverless ###
+# Ignore build directory
+.serverless
+
 ### Vim ###
 # Swap
 [._]*.s[a-v][a-z]
@@ -342,4 +346,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/macos,linux,windows,visualstudiocode,vim,intellij+all,node
+# End of https://www.toptal.com/developers/gitignore/api/macos,linux,windows,visualstudiocode,vim,intellij+all,node,serverless
