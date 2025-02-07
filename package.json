@@ -1,0 +1,45 @@
+{
+	"name": "typescript-template",
+	"version": "1.0.0",
+	"type": "module",
+	"private": true,
+	"description": "TypeScript template",
+	"exports": "./dist/index.js",
+	"scripts": {
+		"start": "tsx watch src/index.ts",
+		"test": "jest",
+		"build": "tsc && tsc-alias",
+		"format": "prettier . --write",
+		"lint": "xo --fix .",
+		"prepare": "husky"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/SebSV-GitHub/TypeScript-template.git"
+	},
+	"keywords": [
+		"TypeScript",
+		"Template"
+	],
+	"author": "Sebastián Suárez Valencia <contact@sebsv.com> (https://www.sebsv.com)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/SebSV-GitHub/TypeScript-template/issues"
+	},
+	"homepage": "https://github.com/SebSV-GitHub/TypeScript-template#readme",
+	"engines": {
+		"node": ">=18"
+	},
+	"devDependencies": {
+		"@types/jest": "^29.5.13",
+		"husky": "^9.1.6",
+		"jest": "^29.7.0",
+		"lint-staged": "^15.2.10",
+		"prettier": "^3.3.3",
+		"ts-jest": "^29.2.5",
+		"tsc-alias": "^1.8.10",
+		"tsx": "^4.19.1",
+		"typescript": "^5.6.3",
+		"xo": "^0.59.3"
+	}
+}
